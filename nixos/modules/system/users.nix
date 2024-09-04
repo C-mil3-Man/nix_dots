@@ -10,7 +10,7 @@
     packages = with pkgs; [];
     openssh.authorizedKeys.keys = [
       ""
-    ]
+    ];
   };
 }
 

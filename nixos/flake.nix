@@ -7,7 +7,6 @@
   };
 
   outputs = { self, nixpkgs, nixvim, ... } @ inputs: {
-    # Define the NixOS configurations
     nixosConfigurations = {
       nixos-laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";  # Architecture
@@ -15,11 +14,6 @@
         modules = [
           ./configuration.nix  # Import main configuration
           ./hardware-configuration.nix  # Import hardware configuration
-        ];
-
-        # Add nixvim to systemPackages
-        environment.systemPackages = with pkgs; [
-          inputs.nixvim.packages.${pkgs.system}.default  # Add nixvim package
         ];
       };
     };

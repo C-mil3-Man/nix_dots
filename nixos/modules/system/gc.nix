@@ -10,7 +10,7 @@
   nix.settings.auto-optimise-store = true;  # Automatically optimize nix store.
   nix.gc = {
     automatic = true;                       # Enable automatic garbage collection.
-    dates = [ "weekly" ];                   # Set to run weekly.
+    dates = "weekly";                   # Set to run weekly.
     options = "--delete-older-than 14d";    # Delete items older than 14 days.
   };
 }
