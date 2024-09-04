@@ -1,0 +1,62 @@
+[cmd_duration]
+format = '\[[⏱ $duration]($style)\]'
+
+[sudo]
+format = '\[[as $symbol]\]'
+
+[time]
+format = '\[[$time]($style)\]'
+
+[username]
+format = '\[[$user]($style)\]'
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[os]
+format = '\[[$symbol]($style)\]'
+
+[package]
+format = '\[[$symbol$version]($style)\]'
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[nix_shell]
+symbol = " "
+format = '\[[$symbol$state( \($name\))]($style)\]'
+
+[openstack]
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+
+[python]
+symbol = " "
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[docker_context]
+symbol = " "
+format = '\[[$symbol$context]($style)\]'
+
+[helm]
+symbol = "⎈ "
+format = '\[[$symbol($version)]($style)\]'
+
+[java]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[kubernetes]
+symbol = "󱃾 "
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
+
+[lua]
+symbol = "󰢱 "
+format = '\[[$symbol($version)]($style)\]'
+
+[terraform]
+symbol = " "
+format = '\[[$symbol$workspace]($style)\]'
+
