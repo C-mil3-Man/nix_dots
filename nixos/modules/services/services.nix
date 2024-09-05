@@ -23,14 +23,7 @@
     fish.enable = true;         # Fish shell
     dconf.enable = true;        # Dconf settings manager
     thunar.enable = true;       # Thunar file manager
-    xfconf.enable = true;       # XFCE config tool
   };
-
-  # D-Bus Packages
-  services.dbus.packages = with pkgs; [
-    xfce.xfconf    # XFCE configuration manager
-    gnome2.GConf   # GNOME configuration system
-  ];
 
   # System packages for Hyprland environment
   environment.systemPackages = with pkgs; [

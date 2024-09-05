@@ -22,10 +22,5 @@ settings:
     global: JetBrains Mono
   fonts.default_size:
     global: 11pt
-  spellcheck.languages:
-    global:
-    - en-US
-    - uk-UA
-    - ru-RU
   tabs.position:
     global: left

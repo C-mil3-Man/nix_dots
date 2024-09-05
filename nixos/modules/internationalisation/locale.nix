@@ -32,12 +32,4 @@
       LC_TIME = "sv_SE.UTF-8";
     };
   };
-
-  # Packages for localization
-  environment.systemPackages = with pkgs; [
-    hyphen                   # Hyphenation for various languages
-    hunspell                 # Spell checker
-    hunspellDicts.en_US      # English dictionary
-    hunspellDicts.sv_SE      # Swedish dictionary
-  ];
 }

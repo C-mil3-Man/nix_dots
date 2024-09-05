@@ -12,15 +12,13 @@
     hyprcursor
     hyprlock
     hypridle
-    #hyprpaper
+    hyprpaper
     xdg-desktop-portal-hyprland
 
     #wezterm not working as of 24/08/30
     kitty
     cool-retro-term
-
     starship
-    helix
 
     qutebrowser #terminal centric browser
     zathura

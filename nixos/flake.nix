@@ -2,7 +2,7 @@
   description = "Crux's NixOS Configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";  # Nixpkgs source for NixOS
+    nixpkgs.url = "github:NixOS/nixpkgs/24.05";  # Nixpkgs source for NixOS
     nixvim.url = "github:elythh/nixvim";  # Add nixvim input
   };
 

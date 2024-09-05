@@ -24,6 +24,7 @@
     du-dust      # Disk usage analyzer, providing a visual representation of space usage.
     fd           # Simple, fast alternative to `find` for searching files.
     jq
+    yt-dlp
     trash-cli    # CLI tool to move files to the trash instead of permanently deleting them.
     zoxide       # Smarter `cd` command, tracking and quickly accessing commonly used directories.
     tokei        # Codebase statistics tool that shows lines of code, files, comments, etc.
