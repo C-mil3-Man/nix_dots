@@ -1,29 +1,32 @@
-{ config, pkgs, ... }:
+ { config, pkgs, ... }:
 
 {
   # Enable Hyprland
   programs.hyprland.enable = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
 
-  environment.systemPackages = with pkgs; [
-    pyprland
-    hyprpicker
-    hyprcursor
-    hyprlock
-    hypridle
-    hyprpaper
-    xdg-desktop-portal-hyprland
+  environment = {
+    sessionVariables = {
+      NIXOS_OZONE_WL = "1";
+      WLR_NO_HARDWARE_CURSORS = "1";
 
-    #wezterm not working as of 24/08/30
-    kitty
-    cool-retro-term
-    starship
+      systemPackages = with pkgs; [
+        pyprland
+        hyprpicker
+        hyprcursor
+        hyprlock
+        hypridle
+        hyprpaper
+        xdg-desktop-portal-hyprland
 
-    qutebrowser #terminal centric browser
-    zathura
-    mpv
-    imv
-  ];
+        kitty
+        cool-retro-term
+        starship
+
+        qutebrowser
+        zathura
+        mpv
+        imv
+      ];
+    };
+  };
 }
-

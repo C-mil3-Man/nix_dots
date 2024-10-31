@@ -1,9 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 {
-
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = [
     inputs.nixvim.packages.${pkgs.system}.default
   ];
-
 }

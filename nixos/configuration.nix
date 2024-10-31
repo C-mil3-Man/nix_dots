@@ -14,6 +14,7 @@
     ./modules/system/swap.nix
     ./modules/system/usb.nix
     ./modules/system/bootloader.nix
+    ./modules/system/sops.nix
 
     # Desktop Environment
     ./modules/desktop/hyprland.nix

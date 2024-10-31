@@ -33,9 +33,11 @@
     daemon.enable = true;
     fangfrisch.enable = true;
     fangfrisch.interval = "daily";
-    updater.enable = true;
-    updater.interval = "daily"; # Ensure appropriate update frequency
-    updater.frequency = 12;
+    updater = {
+      enable = true;
+      interval = "daily";
+      frequency = 12;
+    };
     scanner = {
       enable = true;
       interval = "Sat *-*-* 04:00:00";
@@ -86,6 +88,7 @@
     passExtensions.pass-import
     passExtensions.pass-audit
     tomb
+    sops
   ];
 }
 

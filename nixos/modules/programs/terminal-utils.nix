@@ -25,6 +25,7 @@
     fd           # Simple, fast alternative to `find` for searching files.
     jq
     yt-dlp
+    openstackclient
     trash-cli    # CLI tool to move files to the trash instead of permanently deleting them.
     zoxide       # Smarter `cd` command, tracking and quickly accessing commonly used directories.
     tokei        # Codebase statistics tool that shows lines of code, files, comments, etc.

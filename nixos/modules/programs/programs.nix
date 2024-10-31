@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     firefox
-    tdesktop
+    signal-desktop
     discord
     teams-for-linux
     obsidian
