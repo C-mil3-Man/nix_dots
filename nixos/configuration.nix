@@ -41,6 +41,7 @@
     ./modules/programs/terminal-utils.nix
     ./modules/programs/programs.nix
     ./modules/programs/info-fetchers.nix
+    ./modules/programs/nixvim.nix
 
     # Internationalisation
     ./modules/internationalisation/locale.nix
