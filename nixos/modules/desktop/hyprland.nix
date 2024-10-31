@@ -1,4 +1,4 @@
- { config, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   # Enable Hyprland
@@ -8,25 +8,25 @@
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
       WLR_NO_HARDWARE_CURSORS = "1";
-
-      systemPackages = with pkgs; [
-        pyprland
-        hyprpicker
-        hyprcursor
-        hyprlock
-        hypridle
-        hyprpaper
-        xdg-desktop-portal-hyprland
-
-        kitty
-        cool-retro-term
-        starship
-
-        qutebrowser
-        zathura
-        mpv
-        imv
-      ];
     };
+
+    systemPackages = with pkgs; [
+      pyprland
+      hyprpicker
+      hyprcursor
+      hyprlock
+      hypridle
+      hyprpaper
+      xdg-desktop-portal-hyprland
+
+      kitty
+      cool-retro-term
+      starship
+
+      qutebrowser
+      zathura
+      mpv
+      imv
+    ];
   };
 }
