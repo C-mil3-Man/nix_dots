@@ -22,6 +22,7 @@
       kitty
       cool-retro-term
       starship
+      helix
 
       qutebrowser
       zathura
