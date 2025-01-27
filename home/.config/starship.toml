@@ -1,62 +1,77 @@
-[cmd_duration]
-format = '\[[⏱ $duration]($style)\]'
+add_newline = false
+command_timeout = 2000
+continuation_prompt = "▶▶"
+format = "$username$hostname$directory$status$line_break$character$all"
+right_format = "$git_status$git_state$git_branch$cmd_duration$time"
 
-[sudo]
-format = '\[[as $symbol]\]'
+[character]
+success_symbol = "[➜](bold bright-green)"
 
-[time]
-format = '\[[$time]($style)\]'
-
-[username]
-format = '\[[$user]($style)\]'
-
-[memory_usage]
-format = '\[$symbol[$ram( | $swap)]($style)\]'
-
-[os]
-format = '\[[$symbol]($style)\]'
+[directory]
+home_symbol = "~"
+truncation_length = 8
+truncate_to_repo = true
+truncation_symbol = "../"
+read_only = "🔒"
+style = "#c383eF"
 
 [package]
-format = '\[[$symbol$version]($style)\]'
+disabled = true
+
+[status]
+format = "[$symbol$status=$common_meaning$signal_name$maybe_int]($style)"
+map_symbol = true
+disabled = false
+symbol = "🔴"
+
+[username]
+show_always = true
+format = "[$user]($style)"
+style_root = "bold red"
+style_user = "cyan"
+
+[hostname]
+ssh_only = false
+format = "[@](green)[$hostname](yellow) "
+disabled = false
+
+[cmd_duration]
+min_time = 100
+show_milliseconds = true
+format = "[$duration]($style) "
 
 [git_branch]
-format = '\[[$symbol$branch]($style)\]'
+always_show_remote = true
+format = "[$symbol$remote_branch]($style) "
+style = "blue"
 
-[git_status]
-format = '([\[$all_status$ahead_behind\]]($style))'
+[time]
+format = "[ $time](#bb9966)"
+time_format = "%R:%S"
+disabled = false
+
+[kubernetes]
+disabled = true
+
+[shell]
+disabled = true
+bash_indicator = "󱆃"
+style = "yellow bold"
+
+[battery]
+disabled = true
+
+[battery.display]
+threshold = 30
+style = "bold red"
+disabled = true
 
 [nix_shell]
 symbol = " "
-format = '\[[$symbol$state( \($name\))]($style)\]'
 
-[openstack]
-format = '\[[$symbol$cloud(\($project\))]($style)\]'
-
-[python]
-symbol = " "
-format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
-
-[docker_context]
-symbol = " "
-format = '\[[$symbol$context]($style)\]'
-
-[helm]
-symbol = "⎈ "
-format = '\[[$symbol($version)]($style)\]'
-
-[java]
-symbol = " "
-format = '\[[$symbol($version)]($style)\]'
-
-[kubernetes]
-symbol = "󱃾 "
-format = '\[[$symbol$context( \($namespace\))]($style)\]'
-
-[lua]
-symbol = "󰢱 "
-format = '\[[$symbol($version)]($style)\]'
-
-[terraform]
-symbol = " "
-format = '\[[$symbol$workspace]($style)\]'
-
+[os.symbols]
+Windows = ' '
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+Unknown = '󰠥'

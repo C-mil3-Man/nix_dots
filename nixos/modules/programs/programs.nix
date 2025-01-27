@@ -6,7 +6,6 @@
     signal-desktop
     discord
     teams-for-linux
-    obsidian
   ];
 }
 

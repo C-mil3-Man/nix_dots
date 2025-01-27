@@ -1,14 +1,8 @@
-[includeIf "gitdir:~/projects/"]
-	path = ~/projects/.gitconfig.personal
-
-[includeIf "gitdir:~/work/"]
-	path = ~/work/.gitconfig.work
-
+[user]
+	name = #CHANGEME
+	email = #CHANGEME
 [core]
-	excludesfile = ~/.gitignore
-
-[gpg]
-	format = ssh
-
-[commit]
-	gpgsign = true
+	editor = nvim
+	whitespace = cr-at-eol
+[init]
+	defaultBranch = main

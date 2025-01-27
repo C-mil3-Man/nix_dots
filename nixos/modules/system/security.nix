@@ -28,22 +28,6 @@
   security.pam.services.hyprlock = {}; # Ensure proper configuration
   programs.browserpass.enable = true;
 
-  # ClamAV
-  services.clamav = {
-    daemon.enable = true;
-    fangfrisch.enable = true;
-    fangfrisch.interval = "daily";
-    updater = {
-      enable = true;
-      interval = "daily";
-      frequency = 12;
-    };
-    scanner = {
-      enable = true;
-      interval = "Sat *-*-* 04:00:00";
-    };
-  };
-
   # Firejail Entries
   programs.firejail = {
     enable = true;
@@ -78,7 +62,6 @@
   # System Security Packages
   environment.systemPackages = with pkgs; [
     vulnix
-    clamav
     chkrootkit
     pass-wayland
     pass2csv

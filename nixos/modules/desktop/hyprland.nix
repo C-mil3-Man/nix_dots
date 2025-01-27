@@ -20,11 +20,10 @@
       xdg-desktop-portal-hyprland
 
       kitty
-      cool-retro-term
+      ghostty
       starship
       helix
 
-      qutebrowser
       zathura
       mpv
       imv

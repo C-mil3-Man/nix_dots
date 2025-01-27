@@ -49,5 +49,5 @@
   ];
 
   # IMPORTANT
-  system.stateVersion = "24.05"; # Adjust to your NixOS version
+  system.stateVersion = "24.11"; # Adjust to your NixOS version
 }
