@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/24.11";
     nixvim = {
-      url = "github:spector700/Akari";
+      url = "github:niksingh710/nvix";
       inputs.nixpkgs.follows = "nixpkgs";
       };
     sops-nix {
